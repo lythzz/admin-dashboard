@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 4fr/1fr 7fr;
+    
+}
+
+.sidebar{
+    background-color: #115e59;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 120%;
+}
+.sidebar-tabs, .sidebar-settings{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    font: bold 1em Roboto;
+    padding: 10px 0;
+    padding-left: 15px;
+}
+.sidebar h2{
+    font: bold 1.5em Roboto;
+    color: white;
+    white-space: nowrap;
+    padding-left: 15px;
+}
+
+.header{
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: .8fr 1fr;
+    
+
+}
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.header-top input{
+    width: clamp(200px, 50vw, 80vw);
+    padding: 10px;
+    background-color: #dfdfdf;
+    border: none;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 7px 5px 0px rgba(154,154,154,0.77);
+    
+
+}
+#bigger{
+    width: 4vw;
+    height: 4vw;
+}
+.icon{
+    width: 2.5vw;
+    height: 2.5vw;
+    object-fit: cover;
+    border-radius: 50%;    
+}
+.user .icon{
+    padding: 0 2vw;
+}
+.user a i{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.user{
+    display: flex;
+    align-items: center;
+    font: bold 20px Roboto;   
+}
+.welcome{
+    margin: 0 5vw;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.welcometext{
+    font: normal 25px Roboto;
+    padding-left: 2vw;
+}
+.welcome span{
+    font: bold 15px Roboto;
+    padding-left: 3px;
+}
+.header-btns{
+    margin-right: 3vw;
+    
+}
+.header-btns button{
+    font: bold 15px Roboto;
+    color: white;
+    background-color:#115e59;
+    border: none;
+    width: 100px;
+    padding: 10px !important;
+    border-radius: 10%;
+    margin: 0 1vw;
+    
+}
+
+
+.main{
+    background-color: #ccc;
+    display: grid;
+    grid-template: 3fr 1fr/4fr 1fr;
+}
+.projectsContainer{
+    grid-row: 1/-1;
+}
+.projectsTitle{
+    margin: 3vw;
+    font: bold 2rem Roboto;
+}
+.pCards{
+    gap: 30px;
+    margin: 3vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+.pCard{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5%;
+    border-left: 8px solid #115e59;
+}
+.pTitle{
+    padding: 10px;
+    font: bold 1.5rem Roboto;
+}
+.pText{
+    padding: 10px;
+    font: normal 1rem Roboto;
+}
+.pCard i{
+   font-size: 20px;
+   cursor: pointer;
+   padding: 10px;
+}
+.pIcons{
+    text-align: right;
+}
+
+.sideMain{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.announcements-box{
+    width: 75%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 4px 4px 5px 0px rgba(154,154,154,0.77);
+}
+.announce{
+    padding: 10px 20px;
+}
+.anTitle{
+    font: normal 1.5rem Roboto;
+    padding: 10px 5px;
+}
+.announceTitle{
+    font: normal 1rem Roboto;
+}
+.announceText{
+    font: normal .8rem Roboto;
+}
+.trendingBox{
+    width: 75%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 4px 4px 5px 0px rgba(154,154,154,0.77);
+}
+.userTrending{
+    padding: 20px;
+}
+.userT{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+.userNames{
+    padding-left: 10px;
+    font: normal 1rem Roboto;
+}
